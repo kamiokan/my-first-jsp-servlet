@@ -8,9 +8,11 @@
 <%
     String[] names = {"Taro", "Hanako"};
     for (String name : names) {
-        out.println(name + "<br>");
-    }
 %>
+
+<h1><%= name  %></h1>
+
+<% }%>
 
 </body>
 </html>
