@@ -8,11 +8,21 @@
 <%
     String[] names = {"Taro", "Hanako"};
     for (String name : names) {
+        if ("Taro".equals(name)) {
 %>
 
-<h1><%= name  %></h1>
+<div style="color:blue;">
+    He is <%= name  %>
+</div>
 
-<% }%>
+<% } else { %>
+
+<div style="color:red;">
+    She is <%= name  %>
+</div>
+
+<% }
+}%>
 
 </body>
 </html>
