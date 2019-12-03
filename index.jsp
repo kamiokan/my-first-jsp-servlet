@@ -6,23 +6,12 @@
 </head>
 <body>
 <%
-    String[] names = {"Taro", "Hanako"};
-    for (String name : names) {
-        if ("Taro".equals(name)) {
+    String name = request.getParameter("name");
 %>
 
 <div style="color:blue;">
     He is <%= name  %>
 </div>
-
-<% } else { %>
-
-<div style="color:red;">
-    She is <%= name  %>
-</div>
-
-<% }
-}%>
 
 </body>
 </html>
