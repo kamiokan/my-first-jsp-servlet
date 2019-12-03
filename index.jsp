@@ -5,18 +5,12 @@
     <title>Index</title>
 </head>
 <body>
-<% boolean bl = false; %>
-いえええええい！
-
-<% if (bl) { %>
-
-<h1>Ok,True.</h1>
-
-<% } else {%>
-
-<h1>No,False.</h1>
-
-<% } %>
+<%
+    String[] names = {"Taro", "Hanako"};
+    for (String name : names) {
+        out.println(name + "<br>");
+    }
+%>
 
 </body>
 </html>
