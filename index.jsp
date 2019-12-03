@@ -7,10 +7,11 @@
 <body>
 <%
     String name = request.getParameter("name");
+    String age = request.getParameter("age");
 %>
 
 <div style="color:blue;">
-    He is <%= name  %>
+    He is <%= name  %> (<%= age %>歳)
 </div>
 
 </body>
