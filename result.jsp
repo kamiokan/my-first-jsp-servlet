@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>Index</title>
+    <title>Result</title>
 </head>
 <body>
-<h1>Index</h1>
-<a href="result.jsp">result.jspへ遷移</a>
+<h1>Result</h1>
+<a href="index.jsp">index.jspへ戻る</a>
 
 </body>
 </html>
