@@ -5,8 +5,13 @@
     <title>Index</title>
 </head>
 <body>
+
 <h1>Index</h1>
-<a href="result.jsp?color=blue">青</a><br>
-<a href="result.jsp?color=red">赤</a><br>
+<form method="post" action="result.jsp">
+    名前：<input type="text" name="firstname"/><br>
+    年齢：<input type="text" name="age"/><br>
+    <button>click</button>
+</form>
+
 </body>
 </html>

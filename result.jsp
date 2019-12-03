@@ -5,13 +5,12 @@
     <title>Result</title>
 </head>
 <body>
-<%
-    String color = request.getParameter("color");
-%>
 
 <h1>Result</h1>
-<p>選択された色は <span style="font-size:24px;color:<%= color %>"><%= color %></span> です。</p>
-<a href="index.jsp">index.jspへ戻る</a>
+
+名前：<%=request.getParameter("firstname")%><br>
+年齢：<%=request.getParameter("age")%> 才<br>
+<a href="index.jsp">戻る</a>
 
 </body>
 </html>
