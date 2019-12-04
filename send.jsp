@@ -1,5 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <% request.setCharacterEncoding("UTF-8"); %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="msg.MessageDao" %>
+<%@ page import="msg.Message" %>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -14,10 +18,17 @@
 <%
     String title = request.getParameter("title");
     String contents = request.getParameter("contents");
+
+    Message msg = new Message();
+    msg.date = new SimpleDateFormat("yyyy/MM/dd HH:ss:mm").format(new Date());
+    msg.title = title;
+    msg.contents = contents;
+
+    MessageDao dao = new MessageDao();
+    dao.save(msg);
 %>
 
-<%= title %><br>
-<%= contents %><br>
+<p>保存完了</p>
 <a href="index.jsp">戻る</a>
 
 </body>
