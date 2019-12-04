@@ -28,12 +28,12 @@
     List<Message> messages = dao.select();
 %>
 
-<% for (Message msg: messages) { %>
+<% for (Message msg : messages) { %>
 <div>
     <%= msg.date %>
     <%= msg.title %>
     <div>
-        <%= msg.contents %>
+        <%= msg.contents.replace("\n", "<br>") %>
     </div>
 </div>
 <% } %>
