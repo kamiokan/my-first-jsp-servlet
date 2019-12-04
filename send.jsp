@@ -26,10 +26,10 @@
 
     MessageDao dao = new MessageDao();
     dao.save(msg);
-%>
 
-<p>保存完了</p>
-<a href="index.jsp">戻る</a>
+    // index.jspへ戻る
+    response.sendRedirect("index.jsp");
+%>
 
 </body>
 </html>
